@@ -1,29 +1,15 @@
-import Userone from "./User";
-function App(){
-  return(
-    <div>
-      <h1>Welcome to React app{abc()}</h1>
-      <p>This is a simple react application.</p>
-      <User/>
-     
-    </div>
-  )
-}
-function User(){
-  return(
-    <div>
-      <h1>Boparai</h1>
-    <p>Jarmanjit singh</p>
-    </div>
-  )
-}
-function abc(){
-  return(
 
+function App(){
+  const data = "Harsimran Boparai";
+  return(
     <div>
-    <h1>Amritsar</h1>
-    <p>Chattiwind</p>
-  </div>
+
+   <h1>Welcome React {data}</h1>
+   <p>Total = {2+5}</p>
+   <button onClick={()=>alert("clicked")}>Click Me</button>
+    </div>
   )
+
+
 }
 export default App;

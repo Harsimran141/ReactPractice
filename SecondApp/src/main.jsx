@@ -6,6 +6,6 @@ import User from './User.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <User/>
+   
   </StrictMode>,
 )
