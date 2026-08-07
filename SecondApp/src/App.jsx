@@ -1,15 +1,15 @@
-import ChildCom from "./ChildCom";
+import Hobby from "./Hobby";
 
 function App(){
-  const name = "Jarmanjir singh";
-  const age = 28;
+  let hobbys = ["Reading","Writting","Gamming"];
   return(
     <div>
-      
-    {/* <ChildCom name={name} age={age}/> */}
-    {/* <ChildCom person={{name:"Kumar Sonu", age:28}}/> */}
-    <ChildCom person={["vikas","Rohit"]} />
+      <Hobby name="Harsimranpal singh"
+              age={28}
+              city="Brampton"
+              hobbies={hobbys}
+      />
     </div>
-  )
+  );
 }
 export default App;
