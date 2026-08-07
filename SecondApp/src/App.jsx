@@ -1,14 +1,12 @@
-import { useState } from "react";
-import Task from "./Task";
+import ChildCom from "./ChildCom";
+
 function App(){
-  const [show, setShow] = useState(false);
+  const name = "Jarmanjir singh";
+  const age = 28;
   return(
     <div>
-      <h1>Waris singh Boparai (function name App)</h1>
-      <button onClick={()=> setShow(!show)}>
-        {show ? "Hide" : "show"}
-        Details</button>
-    {show && <Task/>}
+      
+    <ChildCom name={name} age={28}/>
     </div>
   )
 }
