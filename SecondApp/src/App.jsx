@@ -1,23 +1,23 @@
-import Practice from "./Practice";
+import { useState } from "react";
 
 function App(){
-  const showAlert = ()=>{
-    alert("Hello waris singh");
+
+  const [name, setName] = useState("Harsimranpal singh");
+  const [count,setCount] = useState(0);
+  const nameChange = () =>{
+    setName("Waris singh Boparai")
   }
   return(
-    <div>
-<h1>Hello React </h1>
-   <p>Welcome to my website.</p>
-   <img src="https://media.istockphoto.com/id/833710244/photo/red-squirell.jpg?s=170667a&w=0&k=20&c=3uUjnCSJkDDMSZ6Xb_h6fefYxoFeya43QPkPH8XlWsM=" alt="placeholder Image" 
-   width ="300"
-   />
-   <br />
-   <button onClick={showAlert}>Click Pic</button>
-    <Practice/>
-    </div>
-    
-  )
+   <div className="App">
+    <h1>Name:-{name}</h1>
+    <h1>Count={count}</h1>
+    <button onClick={nameChange}>Click Change Button</button>
+     <button onClick={() => setCount(count+1)}>Increment</button>
+     <button onClick={()=> setCount(count -1)}>Decrement</button>
+     <button onClick={()=> setCount(0)}>Reset</button>
+  </div>
 
-
+  
+  );
 }
 export default App;
