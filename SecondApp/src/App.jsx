@@ -6,7 +6,9 @@ function App(){
   return(
     <div>
       
-    <ChildCom name={name} age={28}/>
+    {/* <ChildCom name={name} age={age}/> */}
+    {/* <ChildCom person={{name:"Kumar Sonu", age:28}}/> */}
+    <ChildCom person={["vikas","Rohit"]} />
     </div>
   )
 }

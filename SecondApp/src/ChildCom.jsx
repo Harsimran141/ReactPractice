@@ -1,10 +1,10 @@
-const ChildCom = ({name,age}) => {
-    console.log(name);
+const ChildCom = ({person}) => {
+   
     
     return(
         <div>
-        <h2>Child Component name:-{name}</h2>
-          <p>Child age : {age}</p>
+        <h2>Child Component Name:-{person[0]}</h2>
+          <p>Second Component Name:- {person[1]}</p>
         </div>
     );
 }
