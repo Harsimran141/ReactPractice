@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function Radiobtn() {
   const [gender, setGender] = useState("");
+  const [country,setCountry] = useState("")
 
   return (
     <div className="flex flex-col items-center">
@@ -47,6 +48,17 @@ function Radiobtn() {
       <p>
         Selected gender: <strong>{gender}</strong>
       </p>
+      <h1 className="text-3xl font-bold">Select Dropdown country</h1>
+      <select name="" id="" onChange={(e)=>setCountry(e.target.value)}>
+        <option value="India">India</option>
+        <option value="canada">Canada</option>
+        <option value="Uk">Uk</option>
+        <option value="Australia">Australia</option>
+        <option value="Newzeland">Newzeland</option>
+        <option value="Rasia">Rasia</option>
+      </select>
+      <h1>Selected Country : <span className="text-3xl font-bold text-green-500">
+        {country}</span></h1>
     </div>
   );
 }
