@@ -29,7 +29,7 @@ function Useeffect() {
             key={user.id}
             className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition"
           >
-            <h3 className="text-2xl font-bold text-green-700 mb-3">
+            <h3 className="text-2xl font-bold text-green-700 mb-3">Name:-
               {user.name}
             </h3>
 
