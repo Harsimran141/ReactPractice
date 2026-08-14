@@ -39,6 +39,9 @@ const NetflixSeries = ()=>{
     </div>
     <h2>Name{name}</h2>
     <h3>Rating: {name}</h3>
+  <button className="p-[5px] text-red-500">
+  Watch Video
+</button>
 </div>
     )
 }
