@@ -17,13 +17,15 @@ function App() {
 
 export default App;
 const NetflixSeries = ()=>{
+    const name = "Waris singh"
     return (
 <div>
     <div>
+        <h2>{name}</h2>
       <h1 className="font-bold text-blue-900">
         Hello Tailwind CSS
       </h1>
-
+    
       <img
         src="/image/one.jpg"
         alt="One"
@@ -35,6 +37,8 @@ const NetflixSeries = ()=>{
           consectetur delectus accusantium reprehenderit magni 
           aspernatur vel iusto, odit ipsum fugiat quaerat repellendus deleniti.</p>
     </div>
+    <h2>Name{name}</h2>
+    <h3>Rating: {name}</h3>
 </div>
     )
 }
