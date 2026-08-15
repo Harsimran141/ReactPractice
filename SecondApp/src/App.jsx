@@ -6,6 +6,7 @@ const App = () => {
     "city":"Amritsar",
     "phone":"12345685"
   }
+  let status = true;
   return (
     <div className="main">
       Welcome React
@@ -19,6 +20,9 @@ const App = () => {
       <div>{record.city}</div>
       <div>{record.name}</div>
       <div>{record.phone}</div>
+      <div>
+        { (status)  ? "React App" : ""  }
+      </div>
     </div>
   );
 };
