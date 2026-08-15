@@ -2,20 +2,20 @@
 @import "tailwindcss";
 
 .main{
-  max-width: 800px;
+  max-width: 100px;
   margin: auto;
-  background-color: aqua;
+  background-color: rgb(156, 241, 241);
   text-shadow: #222;
-  color: rgb(4, 28, 165);
+  color: rgb(148, 161, 231);
 }
 .row{
-  width: 1320px;
+  width: 500px;
   margin: auto;
   display: flex;
 }
 .cardItems{
   flex-basis: 23%;
-  background-color: aquamarine;
+  background-color: rgb(163, 231, 208);
   margin: 1%;
-  height: 200px;
+  height: 100px;
 }

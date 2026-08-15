@@ -9,13 +9,14 @@ const App = () => {
       <Header/>
       <Footer/>
       <div className="row">
-       <Card className="cardItems"/>
+       <Card />
+       <Card />
+       <Card />
+       <Card />
+       <Card />
+       <Card />
       </div>
-
-
-
-
-    </div>
+</div>
   )
 };
 
@@ -23,6 +24,6 @@ export default App;
 
 function Card(){
   return(
-    <div className="cardItem">Card Div</div>
+    <div className="cardItems">Card Div</div>
   )
 }
