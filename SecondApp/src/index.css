@@ -1,6 +1,6 @@
 
 @import "tailwindcss";
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,4 +21,15 @@ body {
   background-color: aqua;
   text-shadow: #222;
   color: rgb(4, 28, 165);
-} */
+}
+.row{
+  width: 1320px;
+  margin: auto;
+  display: flex;
+}
+.cardItems{
+  flex-basis: 23%;
+  background-color: aquamarine;
+  margin: 1%;
+  height: 200px;
+}

@@ -8,7 +8,13 @@ const App = () => {
       {/* <h1>React App</h1> */}
       <Header/>
       <Footer/>
-      <Card/>
+      <div className="row">
+       <Card className="cardItems"/>
+      </div>
+
+
+
+
     </div>
   )
 };
@@ -17,6 +23,6 @@ export default App;
 
 function Card(){
   return(
-    <div>Card</div>
+    <div className="cardItem">Card Div</div>
   )
 }
