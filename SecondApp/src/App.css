@@ -183,3 +183,13 @@
   }
 }
 
+.row{
+  width: 1320px;
+  margin: auto;
+  display: flex;
+}
+.cardItems{
+  flex-basis: 23%;
+  margin: 1%;
+  height: 200px;
+}
