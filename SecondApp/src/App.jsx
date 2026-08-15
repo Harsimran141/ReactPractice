@@ -1,6 +1,11 @@
 const App = () => {
   let name ="Waris singh";
   let arraydata = [10,20,30,45]; 
+  let record ={
+    "name":"Waris singh",
+    "city":"Amritsar",
+    "phone":"12345685"
+  }
   return (
     <div className="font-bold text-blue-900">
       Welcome React
@@ -11,6 +16,9 @@ const App = () => {
           <div>{value}</div>
         ) 
       })}
+      <div>{record.city}</div>
+      <div>{record.name}</div>
+      <div>{record.phone}</div>
     </div>
   );
 };
