@@ -15,3 +15,10 @@ body {
 #root {
   min-height: 100vh;
 }
+.main{
+  max-width: 800px;
+  margin: auto;
+  background-color: aqua;
+  text-shadow: #222;
+  color: red;
+}

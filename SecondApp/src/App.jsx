@@ -7,7 +7,7 @@ const App = () => {
     "phone":"12345685"
   }
   return (
-    <div className="font-bold text-blue-900">
+    <div className="main">
       Welcome React
       <h1>{name}</h1>
       {arraydata.map((value)=>{
