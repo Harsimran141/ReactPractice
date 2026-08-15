@@ -20,9 +20,9 @@ const App = () => {
       <div>{record.city}</div>
       <div>{record.name}</div>
       <div>{record.phone}</div>
-      <div>
+      <h1 style={{color:"orange" , backgroundColor:"green"}}>
         { (status)  ? "React App" : ""  }
-      </div>
+      </h1>
     </div>
   );
 };
