@@ -8,12 +8,14 @@ import "./index.css";
 import App from "./App";
 import Practice from "./Practice";
 import Operator from "./Operator";
+import Password from "./Password";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App /> */}
     {/* <Count/> */}
     {/* <Practice/> */}
-    <Operator/>
+    {/* <Operator/> */}
+   <Password/>
   </StrictMode>
 );
