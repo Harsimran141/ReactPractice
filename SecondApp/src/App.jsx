@@ -1,24 +1,17 @@
-import Footer from "./Footer";
-import Header from "./Header";
-import {Col, Container, Row} from 'react-bootstrap'
-const App = () => {
 
+const App = () => {
+let Display=()=>{
+  alert("Welcome")
+}
+let Addnumber =(a,b)=>{
+  console.log(a+b);
+  
+}
   return (
     <div>
-      {/* <h1>React App</h1> */}
-      <Header email="Admin@gmail.com" phone="2589632145" />
-<Container fluid>
-
-<Container>
-  <Row>
-    <Col className="col-12 text-center">
-    Welcome react
-    </Col>
-  </Row>
-</Container>
-</Container>
-       <Footer/>
-     
+<h2>React App </h2>
+   <button onClick={Display} className="bg-[red] px-2 py-2 rounded text-white border-1px shadow-lg border-rarious-2px">Add</button>  
+  <button onClick={()=>Addnumber(2,4)} className="bg-[blue] text-white rounded px-4"  >AddNum</button>
 </div>
   )
 };
