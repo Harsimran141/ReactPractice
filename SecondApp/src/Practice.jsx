@@ -1,13 +1,33 @@
-const Practice=()=>{
-const students =[5,6];
-return(
-    <>
-<h1>Display</h1>
-{/* <p>{students.length  && "No students found"}</p> */}
-{/* <p>{students.length == 0  && "No students found"}</p> */}
-<p>{!students.length && "No students found"}</p>
-<p>Number of student {students.length}</p>
-    </>
-    )
-}
+import { useState } from "react";
+
+const Practice = () => {
+  const [name, setName] = useState(false);
+
+  if (name) {
+    return (
+      <div>
+        <button
+          className="bg-red-500 p-4 text-white"
+          onClick={() => setName(!name)}
+        >
+          Hide
+        </button>
+
+        <p>Welcome React</p>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <button
+          className="bg-blue-500 p-4 text-white"
+          onClick={() => setName(!name)}
+        >
+          Show
+        </button>
+      </div>
+    );
+  }
+};
+
 export default Practice;

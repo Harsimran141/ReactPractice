@@ -1,26 +1,23 @@
 import { useState } from "react";
 
-const App = () => {
+const App = ()=>{
+  const [count,setCount] = useState(0)
+  console.log(count);
   
-let Display=()=>{
-  alert("Welcome")
-}
-let n=10;
-let Addnumber =(a,b)=>{
-  console.log(a+b);
-  n=n+1;
-  console.log(n);
-  
-}
-  return (
+  return(
     <div>
-   
-<h2>React App </h2>
-   <button onClick={Display} className="bg-[red] px-2 py-2 rounded text-white border-1px shadow-lg border-rarious-2px">Add</button>  
-  <button onClick={()=>Addnumber(2,4)} className="bg-[blue] text-white rounded px-4"  >AddNum</button>
-</div>
+      <h1>React App</h1>
+       <h2>Count={count}</h2>
+       <button onClick={()=>setCount(count+1)}
+        className="bg-[red] text-white py-1 px-1 rounded shadow-lg font-bold"
+        >+</button>
+        <button onClick={()=>setCount(count-1)}
+          className="bg-[blue] text-white
+          shadow-lg font-bold my-10px
+          px-1 py-1 rounded"
+          >-</button>
+    </div>
   )
-};
-
+}
 export default App;
 
