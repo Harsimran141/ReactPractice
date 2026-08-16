@@ -5,9 +5,11 @@ const Operator =()=>{
     return(
         <div>
             <h1>Display</h1>
-            <button className="bg-[green] text-white font-bold p-2 rounded shadow-lg">Show</button>
+            <button className="bg-[green] text-white  font-bold p-2 rounded shadow-blue-70"
+            onClick={()=>setShow(!show)}
+            >{show ? "HideBtn" : "ShowBtn"}</button>
        { (show) ?
-     <p>Waris Singh Boparai</p>
+     <p className="text-5xl bg-blue-400 text-white rounded-2xl">Waris Singh Boparai</p>
      :
      ''
     }
