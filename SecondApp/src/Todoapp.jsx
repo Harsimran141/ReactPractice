@@ -36,8 +36,10 @@ setTodos(updateTodos);
         <div className="flex gap-1">
 
         <button onClick={()=>setTodos(todos.filter((items,i)=>i !==index))} 
-        className="bg-red-600 rounded hover:text-black p-0.5  font-bold shadow-2xl">Del</button>
-        <button className="bg-green-600 rounded font-bold p-0.5 hover:bg-amber-300 text-blue-800">Edit</button>
+        className="bg-red-600 rounded hover:text-black p-0.5  
+        font-bold shadow-2xl">Del</button>
+        <button onClick={()=>editTodo(index)} className="bg-green-600 rounded font-bold
+         p-0.5 hover:bg-amber-300 text-blue-800">Edit</button>
         </div>
         </p>)
 
