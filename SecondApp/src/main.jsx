@@ -9,6 +9,7 @@ import App from "./App";
 import Practice from "./Practice";
 import Operator from "./Operator";
 import Password from "./Password";
+import Todoapp from "./Todoapp";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Count/> */}
     {/* <Practice/> */}
     {/* <Operator/> */}
-   <Password/>
+   {/* <Password/> */}
+   <Todoapp/>
   </StrictMode>
 );

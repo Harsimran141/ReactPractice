@@ -1,2 +1,7 @@
 
 @import "tailwindcss";
+h1{
+    font-size: smaller;
+    text-align: center;
+    color :white;
+}
