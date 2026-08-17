@@ -20,10 +20,10 @@ function Todoapp() {
    
     </div>
 <div>
-    {todos.map((value)=>{
-        return<p className="text-white" key={value}>{value}
-        <button className="bg-red-600 rounded hover:text-black p-0.5 mt-2 font-bold shadow-2xl">Del</button>
-        </p>
+    {todos.map((value,index)=>{
+        return(<p className="text-white" key={index}>{value}
+        <button onClick={()=>setTodos(todos.filter((items,i)=>i !==index))} className="bg-red-600 rounded hover:text-black p-0.5 mt-2 font-bold shadow-2xl">Del</button>
+        </p>)
     })}
 </div>
     </div>
