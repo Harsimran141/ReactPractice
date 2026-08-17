@@ -9,6 +9,17 @@ function Todoapp() {
     }
     setTodos([...todos,task])
  }
+ const editTodo = (index)=> {
+    const newTask = prompt("Enter new task");
+    if(newTask === null || newTask.trim() === ""){
+        return;
+    }
+    const updateTodos = todos.map((item,i)=>
+    i === index ? newTask : item
+);
+setTodos(updateTodos);
+ }
+
   return (
     <div className=" bg-green-900 w-56 m-auto h-56 rounded-md justify-center mt-5">
     <h1 className="text-center">My ToDo App</h1>
@@ -22,8 +33,14 @@ function Todoapp() {
 <div>
     {todos.map((value,index)=>{
         return(<p className="text-white" key={index}>{value}
-        <button onClick={()=>setTodos(todos.filter((items,i)=>i !==index))} className="bg-red-600 rounded hover:text-black p-0.5 mt-2 font-bold shadow-2xl">Del</button>
+        <div className="flex gap-1">
+
+        <button onClick={()=>setTodos(todos.filter((items,i)=>i !==index))} 
+        className="bg-red-600 rounded hover:text-black p-0.5  font-bold shadow-2xl">Del</button>
+        <button className="bg-green-600 rounded font-bold p-0.5 hover:bg-amber-300 text-blue-800">Edit</button>
+        </div>
         </p>)
+
     })}
 </div>
     </div>
